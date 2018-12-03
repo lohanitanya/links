@@ -3,7 +3,8 @@
 
         
     <body>
-        
+
+
     <div class="flex-center position-ref full-height">
         @if (Route::has('login'))
             <div class="top-right links">
@@ -12,13 +13,15 @@
                 @else
                     <a href="{{ route('login') }}">Login</a>
                     <a href="{{ route('register') }}">Register</a>
+
                 @endauth
             </div>
         @endif
 
         <div class="content">
             <div class="title m-b-md">
-                Laravel
+                Laravel<br>
+                <a href="/submit">Submit a New Link</a>
             </div>
 
             <div class="links">
@@ -28,6 +31,5 @@
             </div>
         </div>
     </div>
-
     </body>
 </html>

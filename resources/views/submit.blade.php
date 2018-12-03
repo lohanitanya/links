@@ -32,7 +32,13 @@
                         <span class="help-block">{{ $errors->first('description') }}</span>
                     @endif
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <!-- <button type="submit" value="submit" class="btn btn-default">Submit</button> -->
+
+                <input type="submit" value="submit" name="">
+
+
+                      <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
             </form>
         </div>
     </div>
